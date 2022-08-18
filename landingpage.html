@@ -1,0 +1,269 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, target-densityDpi=device-dpi" />
+    <title>SUPERMEGA UKULELE</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet' />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+
+    <!--menu bar-->
+    <div class="nav-container">
+        <div class="wrapper">
+            <nav>
+                <div class="holow">
+                    <h1>       </h1>
+                </div>
+                <div class="logo">
+                    <img src="images/Title-logo2.png" />
+                </div>
+
+                <ul class="nav-items">
+                    <li>
+                        <a href="#">about</a>
+                    </li>
+                    <li>
+                        <a href="#">home</a>
+                    </li>
+                </ul>
+
+            </nav>
+        </div>
+    </div>
+
+
+    <!--title-->
+    <div class="head-container">
+        <div class="wrapper">
+            <header>
+                <h1>
+                    Request a Meeting Form.
+                </h1>
+            </header>
+        </div>
+    </div>
+
+
+    <!--sidebar-->
+
+    <div class="sidebar">
+        <div class="logo-details">
+
+            <i class='bx bx-menu' id="btn"></i>
+        </div>
+        <ul class="nav-list">
+            <li>
+                <i class='bx bx-search'></i>
+                <input type="text" placeholder="Search...">
+                <span class="tooltip">Search</span>
+            </li>
+            <li>
+                <a href="#">
+                    <i class='bx bx-grid-alt'></i>
+                    <span class="links_name">Dashboard</span>
+                </a>
+                <span class="tooltip">Dashboard</span>
+            </li>
+            <li>
+                <a href="#">
+                    <i class='bx bx-user'></i>
+                    <span class="links_name">User</span>
+                </a>
+                <span class="tooltip">User</span>
+            </li>
+            <li>
+                <a href="#">
+                    <i class='bx bx-chat'></i>
+                    <span class="links_name">Messages</span>
+                </a>
+                <span class="tooltip">Messages</span>
+            </li>
+
+            <li>
+                <a href="#">
+                    <i class='bx bx-folder'></i>
+                    <span class="links_name">File Manager</span>
+                </a>
+                <span class="tooltip">Files</span>
+            </li>
+
+            <li>
+                <a href="#">
+                    <i class='bx bx-heart'></i>
+                    <span class="links_name">Saved</span>
+                </a>
+                <span class="tooltip">Saved</span>
+            </li>
+            <li>
+                <a href="#">
+                    <i class='bx bx-cog'></i>
+                    <span class="links_name">Setting</span>
+                </a>
+                <span class="tooltip">Setting</span>
+            </li>
+            <li class="profile">
+                <div class="profile-details">
+                    <img src="images/krystal (2).jpg" alt="profileImg">
+                    <div class="name_job">
+                        <div class="name">Krystal Jung</div>
+                        <div class="job">Staff</div>
+                    </div>
+                </div>
+                <i class='bx bx-log-out' id="log_out"></i>
+            </li>
+        </ul>
+    </div>
+    <!--script-->
+    <script>
+        let sidebar = document.querySelector(".sidebar");
+        let closeBtn = document.querySelector("#btn");
+        let searchBtn = document.querySelector(".bx-search");
+
+        closeBtn.addEventListener("click", () => {
+            sidebar.classList.toggle("open");
+            menuBtnChange();
+        });
+
+        searchBtn.addEventListener("click", () => {
+            sidebar.classList.toggle("open");
+            menuBtnChange(); 
+        });
+    </script>
+
+    <!--content-->
+    <section class="home-section">
+        <div class="staff-content">
+            <img class="profile-picture" src="images/krystal (2).jpg" />
+            <p1>Krystal Jung</p1>
+            <p2>Please choose date and time:</p2>
+
+            <!--calendar-->
+            <div class=" calendar">
+                <div class="rectangle-container">
+                    <div class="months">
+                        <h4>AUGUST</h4>
+                        <ul class="week-days">
+                            <li>S</li>
+                            <li>M</li>
+                            <li>T</li>
+                            <li>W</li>
+                            <li>T</li>
+                            <li>F</li>
+                            <li>S</li>
+
+                        </ul>
+                        <div class="days">
+                            <div class="first-week">
+                                <span> </span>
+                                <span>1</span>
+                                <span>2</span>
+                                <span>3</span>
+                                <span>4</span>
+                                <span>5</span>
+                                <span>6</span>
+
+                            </div>
+                            <div class="sec-week">
+                                <span>7</span>
+                                <span>8</span>
+                                <span>9</span>
+                                <span>10</span>
+                                <span>11</span>
+                                <span>12</span>
+                                <span>13</span>
+
+                            </div>
+                            <div class="third-week">
+                                <span>14</span>
+                                <span>15</span>
+                                <span>16</span>
+                                <span>17</span>
+                                <span>18</span>
+                                <span>19</span>
+                                <span>20</span>
+
+                            </div>
+                            <div class="four-week">
+                                <span>21</span>
+                                <span>22</span>
+                                <span>23</span>
+                                <span>24</span>
+                                <span>25</span>
+                                <span>26</span>
+                                <span>27</span>
+
+                            </div>
+                            <div class="fifth-week">
+                                <span>28</span>
+                                <span>29</span>
+                                <span>30</span>
+                                <span>31</span>
+                                <span> </span>
+                                <span> </span>
+                                <span> </span>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+            <!--time-->
+            <div class="box-time">
+                <div class="time-wrapper">
+                    <div>9:00 a.m</div>
+                    <div>10:00 a.m.</div>
+                    <div>11:00 a.m.</div>
+                    <div>2:00 p.m.</div>
+                    <div>3:00 p.m.</div>
+                    <div>4:00 p.m.</div>
+
+                </div>
+            </div>
+
+            <p3>People Involved:</p3>
+            <div class="people-involved">
+
+                <img class="user-1" src="images/jessica-jung (2).jpg" />
+                <img class="user-2" src="images/soojinie.jpg" />
+                <img class="user-3" src="images/han sohee.jpg" />
+            </div>
+
+            <p4>Objectives of Meeting:</p4>
+            <form>
+                <label for="typehere">Type here.</label>
+                <input type="text" id="typehere" name="typehere" />
+            </form>
+            <div class="objective">
+                <input type="button" value="Submit" />
+            </div>
+
+        </div>
+    </section>
+
+
+    <!--FOOTER-->
+    <div class="footer">
+        <div class="col-1">
+            <a href="#">About SUPERMEGA UKULELE</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Locations</a>
+        </div>
+        <div class="col-2">
+
+        </div>
+        <div class="col-3">
+            <p>The SUPERMEGA UKULELE site is best viewed with Chrome and Firefox. Please take note for optimal browsing.</p>
+            <small>© 2022 SUPERMEGA UKULELE. All Rights Reserved. </small>
+        </div>
+
+    </div>
+</body>
+</html>
